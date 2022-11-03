@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    display: none;
+}
+
+.mobile-header{
+    display: none;
+}
+
+.desktop-header header nav{
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.desktop-header ul{
+    list-style: none;
+    display: flex;
+    margin-top: 26px;
+}
+
+.desktop-header header nav ul li a{
+    padding: 24px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(233, 188, 66);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.desktop-header header nav ul li a:hover{
+    background-color: rgb(51, 51, 51);    
+}
+
+@media (max-width: 740px){
+
+    .mobile-header{
+        display: block;
+    }
+
+    .logo, .menu-ico{
+        padding: 2px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .blocktest{
+        display: block;
+    }
+
+    .mobile-header header nav{
+        background-color: #161616;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile-header header nav label{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .mobile-header header nav ul li a{
+        width: 100%;
+        color: rgb(233, 188, 66);
+        text-decoration: none;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .mobile-header header nav ul{
+        text-align: center;
+        padding: 0px;
+        display: none;
+    }
+
+    #menu-check:checked ~ .oi{
+          display : block;
+    }
+
+    .mobile-header header nav ul li{
+        padding: 10px 0px;
+        display: block;
+    }
+
+    .mobile-header header nav ul li a:hover{
+        background-color:rgb(51, 51, 51);
+    }
+
+    .desktop-header{
+        display: none;
+    }
+}
+
+/* TITULOOOOO */
+
+.img-fundo{
+    background-image: url(https://images.pexels.com/photos/145707/pexels-photo-145707.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color:rgb(233, 188, 66);
+    text-align: center;
+    font-size: 70px;
+    padding: 175px 0px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 5px 7px #000000;
+}
+
+
+/* CONTEINERS */
+
+.bigconteiner{
+    margin: 30px;
+    background-image: linear-gradient(90deg, rgb(245, 245, 245),rgb(233, 188, 66) 65%);
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.text{
+    padding: 10px;
+
+}
+
+.img{
+    border-radius: 10px;
+    background-color: rgb(233, 188, 66);
+}
+
+.img img{
+    margin-right: 0px;
+    margin-bottom: -5px;
+    margin-top: -45px;
+    width: 350px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.text h2{
+    font-size: 50px;
+    font-weight: 850;
+}
+
+@media (max-width: 740px){
+
+    .bigconteiner{
+        margin: 30px;
+        background-image: linear-gradient(0deg, rgb(245, 245, 245),rgb(233, 188, 66) 40%);
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    }
+
+    .img img{
+        width: 250px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+    }
+
+}
+
+/* ULTIMA SECTION */
+
+.musicas-mobile{
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    background-color: #161616;
+    color: rgb(233, 188, 66);
+}
+
+.musicas-mobile h2{
+    font-size: 36px;
+}
+
+audio{
+    width: 180px;
+}
+
+audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+audio::-webkit-media-controls-timeline{
+    display: none;
+}
+
+.ouca{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.ouca a{
+    color: #161616;
+    background-color: rgb(233, 188, 66);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    border: 1px solid black;
+}
+
+.ouca a:hover{
+    background-color: #000000;
+    color: rgb(233, 188, 66);
+    border: 1px solid rgb(233, 188, 66)
+}
+
+@media (max-width: 740px){
+    .ouca{
+        display: inline;
+        text-align: center;
+    }
+
+    .ouca audio{
+        margin: 10px;
+    }
+
+
+}
